@@ -1,4 +1,27 @@
-<h2>Hello World</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+<div class="container">
+  <h2>Users List</h2>
+   <ol class="breadcrumb">   
+    <li class="active">Home</li>
+  </ol>        
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+    <%@users.each do |user|%>
+     <tr>
+        <td><%=user.name%></td>
+        <td><%=user.email%></td>
+        <td>
+        
+          <%= link_to "show", user%>
+        </td>
+      </tr>
+    <%end%>  
+    </tbody>
+  </table>
+</div>
