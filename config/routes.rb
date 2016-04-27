@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
  
+  resources :listing_durations
+  resources :listing_types
+  resources :condition_types
+  resources :products
+  resources :stores
+  resources :settings
   resources :users
 
   root 'welcome#index'

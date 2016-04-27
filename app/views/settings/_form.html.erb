@@ -1,0 +1,32 @@
+<%= simple_form_for(@setting) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :app_id %>
+  </div>
+    <div class="form-inputs">
+    <%= f.input :dev_id %>
+  </div>
+
+  <div class="form-inputs">
+    <%= f.input :cert_id %>
+  </div>
+
+  <div class="form-inputs">
+    <%= f.input :site_id %>
+  </div>
+
+    <div class="form-inputs">
+    <%= f.input :run_name %>
+  </div>
+
+
+  <div class="form-inputs">
+    <%= f.input :user_token %>
+  </div>
+
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
