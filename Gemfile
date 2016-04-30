@@ -36,8 +36,8 @@ gem 'bootstrap-sass'
 gem 'hashids'
 #use active_interaction for code interaction
 gem 'active_interaction', '~> 3.1'
-gem 'ebayr'
-
+# gem 'ebayr'
+gem 'httpclient'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -64,11 +64,11 @@ class SettingsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_setting
-      @setting = Setting.find(params[:id])
+      @setting = Setting.find Setting.decode_id(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def setting_params
-      params.require(:setting).permit(:app_id,:dev_id, :cert_id, :site_id, :run_name, :user_token)
+      params.require(:setting).permit(:app_id,:dev_id, :cert_id, :site_id, :run_name, :user_token,:store_id)
     end
 end

@@ -57,8 +57,6 @@ GEM
     coffee-script-source (1.10.0)
     concurrent-ruby (1.0.1)
     debug_inspector (0.0.2)
-    ebayr (0.0.7)
-      activesupport
     erubis (2.7.0)
     execjs (2.6.0)
     faraday (0.9.2)
@@ -68,6 +66,7 @@ GEM
       activesupport (>= 4.1.0)
     hashids (1.0.2)
     hashie (3.4.3)
+    httpclient (2.8.0)
     i18n (0.7.0)
     jbuilder (2.4.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -202,8 +201,8 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
-  ebayr
   hashids
+  httpclient
   jbuilder (~> 2.0)
   jquery-rails
   listen (~> 3.0.5)

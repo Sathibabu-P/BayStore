@@ -64,11 +64,11 @@ class StoresController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_store
-      @store = Store.find(params[:id])
+      @store = Store.find Store.decode_id(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def store_params
-      params.require(:store).permit(:store_name)
+      params.require(:store).permit(:store_name, :county, :street, :country_code_type, :ebay_website, :postal_code, :category_mapping, :category_prefill, :currency_code, :item_location, :dispatch_time     , :optimal_picturesize, :out_of_stock_control, :get_it_fast, :include_prefilled, :shipping_profile, :return_profile, :payment_profile, :shipping_service, :shippingservice_priority, :shippingservice_cost, :shippingservice_additionalcost, :user_id, :listing_duration_id, :listing_type_id, :condition_type_id)
     end
 end
