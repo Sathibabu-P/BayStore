@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   resources :condition_types
   resources :products
   resources :stores
-  resources :settings
   resources :users
 
   root 'welcome#index'

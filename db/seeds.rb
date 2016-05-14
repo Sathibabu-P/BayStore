@@ -5,7 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
 listing_durations = ListingDuration.create([{ name: 'Days_1' }, { name: 'Days_10' }, { name: 'Days_90' }, { name: 'Days_120' }, { name: 'Days_14' }, { name: 'Days_21' }, { name: 'Days_3' }, { name: 'Days_30' }, { name: 'GTC' }])
 
 

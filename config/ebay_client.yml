@@ -1,0 +1,16 @@
+development: &sandbox
+  api_keys:
+    - token: 'AgAAAA**AQAAAA**aAAAAA**orU2Vw**nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6wFk4GgCpODqQ+dj6x9nY+seQ**H8gDAA**AAMAAA**T6xbO47BlNhDfiKL0GQTp81D6ukn4TziuCZQvxD2k3DVxdHn3wnOH9MENx+i6bBZjR2RMUaMLf0+RFSA8N9cKof994+MxA5h71CdsBwOpcFtE1cnguIYjdKoS7cSmNfHPpGh2qfKp5s2bR9MfXQGlOFbSsteUW4Nw9Tex+5Euv7JbXglK3hiuoU5FFhrDj9ECrFXu7Jp8iuD+FaG1cNLRRNrcQZvky4zeOihyBJOS0wHOYBH+SQFWfLpqec5xI8iIzp/pyId3pIQRUtoBhhvOEBSkTLr2Zv+hldw61JcWEjPqQr9/mk+I9Er6TdI6EH/0w3DPlZ/lEywj7V3ll/zr0VR5jZxNJiLDGWGNUz/ouXZODzmUcED/9mBF4pXEcnH/XzDgKci09/+UQk1p8BSONM0EWqj+PhhCbQQPE5EjhZk9RWWqHibMY3vKnZrGRaE29F6phSTJZ+fnpOeIo5ygDRRwiWrtNnwqbRRHU2IzDBM5xHSVRY0pp1iHnKF5UFIhZ1KrAZJL76XQCG5hmmtiaSphDmPjRphF17zdZCKQzcvvfTxBTOy3xg+p4CYqtwcnDpyUeWWyT22Nw7YHdcEo6kmr0b7VKqi8t/LiVOpZX+dZj4IVlg1LMGRD0MSz7H0Ixo+U5gPlreDMIMRlE0TIx479b1AGcPMFvZI22wqmCpbc3wwFxCEXAvg55NXS0pjZ5pfZjqhiLfzrIfF6i3rkTTXL/wEowZSJrmrAY8ZHk0pnI1pgY6FzvMtmjoIVE1S'
+      devid: 'cc50f0f9-9bb8-4372-8f1a-bae887c4678f'
+      appid: 'sathibab-eBayStor-SBX-32f839347-412aba74'
+      certid: 'SBX-2f83934755ae-ffc1-44be-b197-92dd'
+
+test:
+  <<: *sandbox
+
+production:
+  api_keys:
+    - token: '<YOUR LIVE AUTHENTICATION TOKEN>'
+      devid: '<YOUR LIVE DEV ID>'
+      appid: '<YOUR LIVE APP ID>'
+      certid: '<YOUR LIVE CERT ID>'

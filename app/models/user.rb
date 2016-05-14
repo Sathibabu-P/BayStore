@@ -13,6 +13,6 @@ class User < ApplicationRecord
 
 	 def to_params
 	 	Hashids.new("salt").encode(id)
-	  end
+	 end
 	
 end

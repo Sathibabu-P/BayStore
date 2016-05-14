@@ -1,5 +1,4 @@
 class Store < ApplicationRecord
-	has_one :setting
 	has_many :products
 	belongs_to :listing_type
 	belongs_to :listing_duration

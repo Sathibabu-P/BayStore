@@ -1,0 +1,35 @@
+      <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">Users List</div>
+          <div class="panel-body">
+            <table data-toggle="table"  data-show-refresh="true" data-show-toggle="true" data-show-columns="true" data-search="true"  data-pagination="true" >
+                <thead>
+                <tr>                   
+                    <th data-sortable="true">S.No</th>
+                    <th data-sortable="true">UserName</th>
+                    <th data-sortable="true">Email</th>
+                    <th>Actions</th>
+                </tr>                
+                </thead>    
+                <tbody>
+                 <%@users.each_with_index do |user,index|%>
+                   <tr>
+                      <td><%=index+1%></td>
+                      <td><%=user.name%></td>
+                      <td><%=user.email%></td>
+                      <td>
+                      
+                        <%= link_to "show", user%>
+                      </td>
+                    </tr>
+                  <%end%>  
+                </tbody>           
+            </table>
+          </div>
+        </div>
+      </div>
+    </div><!--/.row-->  
+
+
+    <!-- data-sort-name="name" data-sort-order="desc" -->
